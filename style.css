@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  height: 80px;
+}
+
+.container .header .nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.container .header .nav .logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.container .header .nav .logo-box .logo {
+  width: 39px;
+  height: 40px;
+}
+
+.container .header .nav .logo-box .title {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.container .header .nav .logo-box .title .part {
+  font-weight: 500;
+}
+
+.container .header .nav .nav-items {
+  display: flex;
+  gap: 25px;
+}
+
+.container .header .nav .nav-items .nav-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .header .nav .nav-items .nav-item::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+
+.container .header .nav .nav-items .nav-item:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+.container .header .nav-box .icon-bucket,
+.icon-person {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .main {
+  background-image: url(./imgs/background-img.svg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+
+.container .main .main-content {
+  width: 40%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+}
+
+.container .main .main-content .content-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 56px;
+  padding: 0 35px;
+}
+
+.container .main-box {
+  width: 750px;
+  height: 150px;
+  background-color: black;
+  margin: 0 auto;
+}
