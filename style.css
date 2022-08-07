@@ -169,7 +169,6 @@
   background-color: #be5426;
 }
 
-
 .container .section-new_goods {
   min-height: 90vh;
 }
@@ -264,14 +263,14 @@
   margin-left: 5px;
 }
 
-.container .section-new_things {
+.container .section-new_thingss {
   min-height: 90vh;
-  background-color: #ECECEC;
-  padding: 10px 0;
+  background-color: #ececec;
+  width: 100%;
+  padding: 40px 0;
 }
 
-.container .section-new_goods .goods-title {
-  margin-top: 220px;
+.container .section-new_thingss .things-title {
   text-align: center;
   color: #505050;
   font-size: 40px;
@@ -280,7 +279,7 @@
   padding: 15px 0;
 }
 
-.container .section-new_things .goods-title::after {
+.container .section-new_thingss .things-title::after {
   content: "";
   position: absolute;
   width: 81px;
@@ -291,74 +290,84 @@
   top: 0;
 }
 
-.container .section-new_things .cards {
+.container .section-new_thingss .things-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 350px));
   grid-template-rows: repeat(1, 417px);
-  gap: 15px;
-}
-
-.container .section-new_things .cards .goods-card {
-  display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
   gap: 15px;
-  box-shadow: 0px 20px 53px -13px rgba(124, 124, 124, 0.13);
 }
 
-.container .section-new_things .cards .goods-card .card-img {
+.container .section-new_thingss .things-cards .cards {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  cursor: pointer;
+  gap: 15px;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.container .section-new_thingss .things-cards .cards .card-img {
   width: 400px;
   height: 252px;
-  position: relative;
-  background: rgb(211, 211, 211);
-  background: radial-gradient(
-    circle,
-    rgba(211, 211, 211, 1) 0%,
-    rgba(251, 251, 251, 1) 100%
-  );
 }
 
-.container .section-new_things .cards .goods-card .card-img .img {
-  position: absolute;
-  width: 364px;
-  height: 260px;
-  bottom: 15px;
-  left: 0;
+.container .section-new_thingss .things-cards .cards .card-img .img {
+  width: 100%;
+  height: 100%;
 }
 
-.container .section-new_things .cards .goods-card .card-title {
+.container .section-new_thingss .things-cards .cards .card-title {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  margin: 0 auto;
+}
+
+.container .section-new_thingss .things-cards .cards .card-title .title,
+.money {
+  font-size: 18px;
+  color: #252525;
+  font-weight: 600;
   margin-top: 15px;
 }
 
-.container .section-new_things .cards .goods-card .card-text {
-  text-align: start;
-  width: 80%;
+.container .section-new_thingss .things-cards .cards .card-text {
+  color: #767676;
   font-size: 16px;
   font-weight: 500;
-  color: #767676;
-}
-
-.container .section-new_things .cards .goods-card .card-color {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   width: 80%;
+  margin: 0 auto;
 }
 
-.container .section-new_things .cards .goods-card .card-color.value {
+.container .section-new_thingss .things-cards .cards .card-color {
+  border: 1px solid rgb(194, 191, 191);
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  width: 30%;
+  padding: 2px 5px;
+  border-radius: 15px;
+}
+
+.container .section-new_thingss .things-cards .cards .card-color .value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #242424;
+  text-align: left;
+}
+
+.container .section-new_thingss .things-cards .cards .card-color .color {
   font-size: 12px;
   font-weight: 700;
   color: #242424;
-}
-
-.container .section-new_things .cards .goods-card .card-color .color {
-  font-weight: 400;
   margin-left: 5px;
 }
+
+
 
 
 @media (max-width: 759px) {
