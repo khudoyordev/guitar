@@ -414,7 +414,6 @@
   grid-template-columns: repeat(auto-fit, minmax(609px, 1fr));
   grid-template-rows: repeat(1, 648px);
   gap: 15px;
-  background-color: #ab0433;
 }
 
 .container .section-head .head-cards .box-cards {
@@ -433,11 +432,6 @@
   border-radius: 10px;
 }
 
-.container .section-head .head-cards .box-cards .img {
-  /* width: 616px;
-  height: 487px; */
-}
-
 .container .section-head .head-cards .box-cards .box-cards_content {
   padding: 25px;
 }
@@ -448,6 +442,15 @@
   font-size: 24px;
 }
 
+.container
+  .section-head
+  .head-cards
+  .box-cards
+  .box-cards_content:hover
+  .title {
+  color: #fff;
+}
+
 .container .section-head .head-cards .box-cards .box-cards_content .subtitle {
   color: #767676;
   font-weight: 700;
@@ -455,15 +458,21 @@
   padding: 7px 0;
 }
 
-.container .section-head .head-cards .box-cards .box-cards_content:hover.title {
+.container
+  .section-head
+  .head-cards
+  .box-cards:hover
+  .box-cards_content
+  .title {
   color: #fff;
 }
 
 .container
   .section-head
   .head-cards
-  .box-cards
-  .box-cards_content:hover.subtitle {
+  .box-cards:hover
+  .box-cards_content
+  .subtitle {
   color: #fff;
 }
 
@@ -472,18 +481,153 @@
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(1, 602px);
   min-height: 100vh;
-  background-color: #ab0433;
 }
 
 .container .head-small_cards .small-cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  /* height: 100%; */
   margin: 0 auto;
-  background-color: #242424;
-  height: 602px;
+  height: 100%;
   width: 400px;
+  gap: 25px;
+  background-color: #252525;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container .head-small_cards .small-cards:hover {
+  background-color: #eaeaea;
+}
+
+.container .head-small_cards .small-cards .cards-img {
+  height: 80%;
+  width: 100%;
+}
+
+.container .head-small_cards .small-cards .card-content {
+  padding-left: 25px;
+}
+
+.container .head-small_cards .small-cards .card-content .title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container .head-small_cards .small-cards .card-content .subtitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container .head-small_cards .small-cards:hover .card-content .title {
+  color: #252525;
+}
+
+.container .head-small_cards .small-cards:hover .card-content .subtitle {
+  color: #767676;
+}
+
+.container .footer {
+  height: 35vh;
+  background-color: #505050;
+  width: 100%;
+  padding: 45px;
+}
+
+.container .footer .footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container .footer .footer-box .footer-box_content {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container
+  .footer
+  .footer-box
+  .footer-box_content
+  .footer-content
+  .content-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  padding: 9px 0;
+}
+
+.container
+  .footer
+  .footer-box
+  .footer-box_content
+  .footer-content
+  .content-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 1.5px;
+  background-color: #fff;
+}
+
+.container
+  .footer
+  .footer-box
+  .footer-box_content
+  .footer-content
+  .content-items
+  .content-item {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.container .footer .footer-box .footer-network {
+  width: 30%;
+  text-align: right;
+}
+
+.container .footer .footer-box .footer-network .network-logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container .footer .footer-box .footer-network .network-logo .logo {
+  width: 39px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.container .footer .footer-box .footer-network .network-logo .logo-title {
+  font-size: 27px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.container
+  .footer
+  .footer-box
+  .footer-network
+  .network-logo
+  .logo-title
+  .logo-title_part {
+  font-weight: 500;
+}
+
+.container .footer .footer-box .footer-network .network-icons .icon {
+  width: 22px;
+  height: 16px;
+  margin: 7px 5px;
 }
 
 @media (max-width: 759px) {
